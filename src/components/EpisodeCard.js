@@ -1,20 +1,20 @@
-import React from 'react'
-import { Card } from 'semantic-ui-react'
+import React from 'react';
+import styled from 'styled-components';
 
- export default function EpisodeCard (props) {
-  // image={image}
+const EpisodeDiv = styled.div`
+  width: 25%;
+`;
+
+export default function EpisodeCard(props) {
+  let episode = props.episode;
+
   return (
-    <Card>
-      <Card.Content>
-      <Card.Header>{props.episode.name}</Card.Header>
-      <Card.Meta><span>{props.episode.episode}</span></Card.Meta>
-      <Card.Description>
-        Characters: {props.episode.characters.length}
-      </Card.Description>
-      </Card.Content>
-      <Card.Content extra>
-        Type: {props.episode.air_date}
-      </Card.Content>
-    </Card>
-  )
+      <EpisodeDiv>
+        <h3>Name: {episode.name}</h3>
+        <ul>
+          <li>Episode: {episode.episode}</li>
+          <li>Date Aired: {episode.air_date}</li>
+        </ul>
+      </EpisodeDiv>
+  );
 }
