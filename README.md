@@ -26,12 +26,16 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Explain benefit(s) using `client-side routing`?
 > Answer:
+It makes navigating through different 'pages' faster at a cost of a longer initial load time.
 - [ ] What does AJAX stand for?
 > Answer:
+asynchronous JavaScript and XML
 - [ ] What are `controlled components` in React?
 > Answer:
+Components that manipulate user data gained from form elements.
 - [ ] Name three tools/libraries for making AJAX requests.
 > Answer:
+Axios, jQuery, Bootcamp
 
 
 ## Project Set Up
@@ -136,4 +140,3 @@ There's a range of difficulty included. 😈
 If the [main API service](https://rickandmortyapi.com/documentation) goes down, or you exceed rate limits, you can try the following backup URL:
 
 **Backup URL:** https://rick-and-morty-learning-api.herokuapp.com/api/
-
